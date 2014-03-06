@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/vendor/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-ui.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $(document).ready(function() {
+            $('.slider').draggable({
+                containment: '.container',
+                drag: function(e, ui) {
+                    var newLeft = ui.position.left * -1;
+                    var newTop = ui.position.top * -1;
+                    $('.slider').css('background-position', newLeft + 'px ' + newTop + 'px');
+                }
+            });
+        });
+    })(jQuery)
+    </script>
+</head>
+
+<body style="cursor: auto;">
+    <div class="container">
+        <div class="skin"></div>
+        <div class="slider ui-draggable" style="left: 129px; top: 87px; background-position: -129px -87px;"></div>
+    </div>
+
+
+</body>
+
+</html>

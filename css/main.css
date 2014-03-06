@@ -1,0 +1,29 @@
+.container {
+        width: 1000px;
+        height: 495px;
+        margin: 50px auto;
+        position: relative;
+    }
+    .skin {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1000px;
+        height: 495px;
+        background: url(../img/hero-before.jpg);
+        background-position: top left;
+    }
+    .slider {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 13px #000 inset;
+        /*border: 5px solid
+         rgba(255, 255, 255, 0.5);*/
+        position: absolute;
+        top: 125px;
+        left: 125px;
+        background: url(../img/hero-after.jpg);
+        background-position: -125px -125px;
+        cursor: move;
+    }
